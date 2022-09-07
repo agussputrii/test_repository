@@ -18,7 +18,7 @@ const {
 router.get('/notes/add', renderNoteForm);
 
 //Create New Note
-router.post('/notes/add', createNewNote);
+router.post('/notes/new-note', createNewNote);
 
 
 //See all notes
@@ -35,4 +35,6 @@ router.put('/notes/edit/:id', updateNote);
 //Delete Notes
 router.delete('/notes/delete/:id', deleteNote);
 
+
+//export the router
 module.exports = router;

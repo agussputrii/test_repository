@@ -1,9 +1,11 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-
-//Server initialization
-const app = express();
 const path = require('path');
+const morgan = require('morgan');
+//Server initialization
+
+const app = express();
+
 
 //Settings
 app.set('port', process.env.PORT || 4000);
@@ -18,6 +20,7 @@ app.engine('.hbs', exphbs.engine({
 app.set('view engine', '.hbs');
 
 //Middlewares
+app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 //Global Variables
 

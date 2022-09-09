@@ -37,13 +37,17 @@ notesCrtl.renderNotes = async (req, res) => {
 };
 
 //Edit notes
-notesCrtl.renderEditForm = (req, res) => {
-    res.send('render edit notes');
+notesCrtl.renderEditForm = async (req, res) => {
+    const note = await Note.findById(req.params.id).lean();
+    console.log(note);
+    res.render('notes/edit-note', { note });
 };
 
 //Update notes
-notesCrtl.updateNote = (req, res) => {
-    res.send('update notes');
+notesCrtl.updateNote = async (req, res) => {
+    const { title, description } = req.body;
+    await Note.findByIdAndUpdate(req.params.id, req.body, {title, description});
+    res.redirect('/notes');
 };
 
 //Delete Notes

@@ -1,10 +1,14 @@
 <div class="row">
     {{#each notes}}
         <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card">
-                    <h4>{{title}}</h4>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">
+                        {{title}} <i class="fas fa-edit"></i>
+                    </h4>
+                    <p>{{description}}</p>
                 </div>
             </div>
+        </div>
     {{/each}}
 </div>

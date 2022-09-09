@@ -32,7 +32,7 @@ notesCrtl.createNewNote = (req, res) => {
 
 //Render all notes
 notesCrtl.renderNotes = async (req, res) => {
-    const notes = await Note.find();
+    const notes = await Note.find().lean();
     res.render('notes/all-notes', {notes});
 };
 

@@ -26,7 +26,7 @@ notesCrtl.createNewNote = (req, res) => {
     const newNote = new Note({ title, description });
     newNote.save();
     console.log(newNote);
-    res.send('new note created');
+    res.redirect('/notes');
 }
 ;
 
@@ -47,8 +47,10 @@ notesCrtl.updateNote = (req, res) => {
 };
 
 //Delete Notes
-notesCrtl.deleteNote = (req, res) => {
-    res.send('delete notes');
+notesCrtl.deleteNote = async (req, res) => {
+    
+    await Note.findByIdAndDelete(req.params.id)
+    res.redirect('/notes');
 };
 
 module.exports = notesCrtl;

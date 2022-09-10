@@ -11,6 +11,8 @@ const {
     logout
 } = require('../controllers/users.controller');
 
+
+//Router methods
 router.get('/users/signup', renderSignUpForm);
 
 router.post('/users/signup', signup);

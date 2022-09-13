@@ -5,8 +5,8 @@ const router = Router();
 
 const {
     renderSignUpForm,
-    signup,
     renderSigninForm,
+    signup,
     signin,
     logout
 } = require('../controllers/users.controller');

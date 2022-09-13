@@ -5,10 +5,14 @@ const passport = require('passport');
 // Export the controller to use User model
 const User = require('../models/User');
 
+// Render the signup form
 usersCtrl.renderSignUpForm = (req, res) => {
     res.render('users/signup');
 };
 
+// Sign up a new user
+// Save it in the database
+// Redirect to the notes page
 usersCtrl.signup = async (req, res) => {
     const errors = [];
     const {name, email, password, confirm_password} = req.body;
@@ -42,11 +46,12 @@ usersCtrl.signup = async (req, res) => {
     }
 };
 
+// Render the signin form
 usersCtrl.renderSigninForm = (req, res) => {
     res.render('users/signin');
 };
 
-// 
+// Sign in with passport
 usersCtrl.signin = passport.authenticate('local', {
     failureRedirect: '/users/signin',
     successRedirect: '/notes',

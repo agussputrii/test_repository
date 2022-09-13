@@ -34,6 +34,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+// Passport needs to be initialized after the session
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
@@ -43,7 +44,9 @@ app.use(flash());
 app.use((req, res, next) => {
     res.locals.success_msg = req.flash('success_msg');
     res.locals.error_msg = req.flash('error_msg');
+    //Passport uses the message property to store the error message
     res.locals.error = req.flash('error');
+    //Passport uses the user property to store the user information
     res.locals.user = req.user || null;
     next();
 });

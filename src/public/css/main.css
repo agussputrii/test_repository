@@ -1,9 +1,54 @@
 body {
-    background-color: #939cb7;
-    font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(-45deg, #e63232, #a72929, #c75252, #e54a4a);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .logo {
     width: 35%;
     height: 35%;
+}
+
+/* Main logo */
+#logo {
+    width: 6em;
+}
+
+.navbar {
+    background-color: #801313 !important;
+}
+
+/* card properties */
+.card {
+    background-color: #801313;
+    border: 4px solid #fa6879;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-title {
+    color: #ffe4e7; /* pink */
+}
+
+a.register-btn:hover {
+    background-color: #e54a4a;
+    color: #000000;
+}
+
+.signin-btn {
+    background-color: #e54a4a !important;
+    color: #ffe4e7;
 }

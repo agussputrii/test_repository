@@ -1,18 +1,26 @@
 <div class="row">
     {{#each notes}}
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title d-flex justify-content-between align-items-center">
-                        {{ title }} <a href="/notes/edit/{{_id}}"><i style=color:azure class="fa-sharp fa-solid fa-pen-to-square"></i></a>
-                    </h4>
-                    <p style=color:azure>{{ description }}</p>
-                    <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
-                        <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="btn btn-primary btn-outline-light btn-block btn-sm">Delete</button>
-                    </form>
-                </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{ title }} <a href="/notes/edit/{{_id}}"><i style=color:azure
+                            class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+                </h4>
+                <p style=color:azure>{{ description }}</p>
+                <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-primary btn-outline-light btn-block btn-sm">Delete</button>
+                </form>
             </div>
         </div>
+    </div>
+    {{else}}
+    <div class="card mx-auto">
+        <div class="card-body">
+            <h3 class="card-title">There are not notes yet.</h3>
+            <a href="/notes/add" class="btn create-btn btn-block">Add your first note!</a>
+        </div>
+    </div>
     {{/each}}
 </div>

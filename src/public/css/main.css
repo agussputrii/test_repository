@@ -54,7 +54,7 @@ a.register-btn:hover {
     color: #000000;
 }
 
-.signin-btn, .save-btn, .register-btn {
+.signin-btn, .save-btn, .register-btn, .create-btn {
     background-color: #e54a4a !important;
     color: #ffe4e7;
 }

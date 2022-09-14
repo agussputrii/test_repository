@@ -53,3 +53,14 @@ a.register-btn:hover {
     background-color: #e54a4a !important;
     color: #ffe4e7;
 }
+
+.jumbotron {
+    background-color: #801313;
+    color: #ffe4e7;
+}
+
+/*About*/
+.about {
+    background-color: #801313;
+    color: #ffe4e7;
+}

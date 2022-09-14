@@ -1,10 +1,10 @@
 body {
-	background: linear-gradient(-45deg, #fd5353, #ef4242, #c75252, #d13c3c);
+	background: linear-gradient(-45deg, #fd5353, #ef4242, #c75252, #c44141);
 	background-size: 400% 400%;
-	animation: gradient 8s ease infinite;
+	animation: gradient 6s ease infinite;
 	height: 100vh;
 }
-
+/*background: linear-gradient*/
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -17,6 +17,7 @@ body {
 	}
 }
 
+/* Index logo */
 .logo {
     width: 35%;
     height: 35%;
@@ -27,9 +28,10 @@ body {
     width: 6em;
 }
 
+/* Navbar */
 .navbar {
     background-color: #801313 !important;
-    border: 3px solid #ff93a0 !important;
+    border: 2px solid #ff93a0 !important;
     font-size: 1.5em;
 }
 
@@ -41,6 +43,7 @@ body {
     margin: 10px;
 }
 
+/* card title and header */
 .card-title, .card-header {
     color: #ffe4e7; /* pink */
     font-weight: bold;

@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #f64343, #d13434, #c75252, #e54a4a);
+	background: linear-gradient(-45deg, #fd5353, #eb3131, #c75252, #d13c3c);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	height: 100vh;
@@ -54,6 +54,7 @@ a.register-btn:hover {
     color: #ffe4e7;
 }
 
+/*Index properties*/
 .jumbotron {
     background-color: #801313;
     color: #ffe4e7;

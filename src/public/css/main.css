@@ -30,6 +30,7 @@ body {
 .navbar {
     background-color: #801313 !important;
     border: 3px solid #ff93a0 !important;
+    font-size: 1.5em;
 }
 
 /* card properties */

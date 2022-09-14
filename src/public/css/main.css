@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #fd5353, #eb3131, #c75252, #d13c3c);
+	background: linear-gradient(-45deg, #fd5353, #ef4242, #c75252, #d13c3c);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	height: 100vh;
@@ -29,6 +29,7 @@ body {
 
 .navbar {
     background-color: #801313 !important;
+    border: 3px solid #ff93a0 !important;
 }
 
 /* card properties */

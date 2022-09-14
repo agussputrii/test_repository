@@ -20,6 +20,9 @@ This app can do:
 
 ![register_interface](https://user-images.githubusercontent.com/85753366/190047534-6e39b0f1-231b-4ec6-b949-43160b8ecf27.jpg)
 ㅤ
+### Notes previsualization
+
+![image](https://user-images.githubusercontent.com/85753366/190056696-430d7e31-77a4-429f-b1f8-03fa1eadfece.png)
 
 ## simple logos created with photoshop
 
